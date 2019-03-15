@@ -3,7 +3,7 @@
  */
 public class UserOfList {
     private static List_inArraySlots list;
-    
+
     public static void main( String[] args ) {
         list = new List_inArraySlots();
 
@@ -38,10 +38,12 @@ public class UserOfList {
          System.out.println("result of expanded list: "
               + list.size() + " elements:");
          System.out.println( list);
-         
+
          for (int elemIndex = list.size(); elemIndex >= 0; elemIndex--) {
             System.out.println("element " + elemIndex + ": " + list.get(elemIndex));
          }
+
+         list.add( 3.14);
+         list.add( "piazza");
     }//test
 }
-

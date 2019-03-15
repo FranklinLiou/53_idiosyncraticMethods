@@ -44,7 +44,7 @@ public class List_inArraySlots {
 
     @return true, in keeping with conventions yet to be discussed
    */
-    public boolean add( Object value) { 
+    public boolean add( Object value) {
         if( filledElements == elements.length) expand();
         elements[ filledElements] = value;
         filledElements++;
